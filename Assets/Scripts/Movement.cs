@@ -68,7 +68,6 @@ public class Movement : MonoBehaviour
     private RaycastHit StepHit,FeetHit;
     [SerializeField] private float DistanceToStep=0.1f;
     [SerializeField] private float StepAngle = 50f;
-    [SerializeField] private bool IsSteping = false;
     [SerializeField] private float RotateAngle = 45f;
     private Vector3 stepRay,stepRay2;
     void StepOnObstacle()

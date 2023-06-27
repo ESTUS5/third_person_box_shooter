@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6237404740259649277, guid: dac19a78be98b704b8e34a3270132b91, type: 3}
   Damage: 8
-  ProjectileSpeed: 8
+  ProjectileSpeed: 7
   Cooldown: 1

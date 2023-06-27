@@ -191,7 +191,7 @@ Rigidbody:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 640
+    m_Bits: 512
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
@@ -220,23 +220,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 9164006623926878189}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 726bac1cc1ad4eb4b965e2efd724e180, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a24556b1d4889442b2da43d36528f20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   FullHealth: {r: 0.3802, g: 1, b: 0, a: 1}
   LowHealth: {r: 1, g: 0.1001, b: 0, a: 1}
-  Health: {fileID: 0}
-  Material: {fileID: 0}
+  Health: {fileID: 3295345900974149598}
+  Material: {fileID: 2100000, guid: a5f3e196e9a3bc1498f955b227ef9caf, type: 2}
   Projectile: {fileID: 11400000, guid: 92281cae76aad754e8ba3a68779ba255, type: 2}
-  Rigidbody: {fileID: 2769210002641704832}
-  NpcStats: {fileID: 11400000, guid: 6ac1f50f727c6094994a057e3d2eb0be, type: 2}
+  rigidbody: {fileID: 2769210002641704832}
   GroundMask:
     serializedVersion: 2
     m_Bits: 1
-  TimeTillNextTarget: 2
-  NewTargetCooldown: 2
-  DistanceWander: 0
+  TimeTillNextTarget: 3
+  NewTargetCooldown: 1.25
+  DistanceWander: 1
   newTarget: {x: 0, y: 0, z: 0}
+  acceleration: 3
   AttackTarget: {fileID: 0}
   CooldownTime: 0
   NumberOfRays: 20
@@ -244,7 +244,7 @@ MonoBehaviour:
   DetectionDistance: 10
   Mask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 193
 --- !u!135 &2884048366770711444
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -255,7 +255,7 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2147483647
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -281,4 +281,7 @@ MonoBehaviour:
   statsList:
   - name: MaxHealth
     value: 200
+    modifiers: []
+  - name: MaxSpeed
+    value: 6
     modifiers: []
